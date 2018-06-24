@@ -25,6 +25,7 @@ func Provider() terraform.ResourceProvider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
+			"jx_install":     resourceInstall(),
 			"jx_team":        resourceTeam(),
 			"jx_environment": resourceEnvironment(),
 		},
